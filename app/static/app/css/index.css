@@ -280,6 +280,14 @@
 
 .contact-wrapper {
   margin-top: 10rem;
+  width: 100%;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.content-container{
+  width: 50%;
 }
 
 .contact-header {
@@ -341,8 +349,8 @@
 }
 
 @media (min-width: 992px) {
-  .wrapper {
-    margin-top: 10rem;
+  .contact-wrapper {
+
   }
 
   .contact-header {
@@ -401,4 +409,16 @@
     background-color: #ef7f18;
     color: #fff;
   }
+}
+
+.repo-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.repo-list li{
+  margin: 5px;
 }

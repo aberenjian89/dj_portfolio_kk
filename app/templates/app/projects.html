@@ -1,0 +1,35 @@
+{%  extends 'app/base.html' %}
+{% block content %}
+    <div class="container project-wrapper mb-3">
+      <div class="row">
+        <div class="col-lg-4 project">
+          <img src="../../static/app/images/help_desk.png" class="img-thumbnail" />
+        </div>
+        <div class="col-lg-4 project">
+          <img src="../../static/app/images/leanterms.png" class="img-thumbnail" />
+        </div>
+        <div class="col-lg-4 project">
+          <img src="../../static/app/images/pexcel.png" class="img-thumbnail" />
+        </div>
+        <div
+          class="col-lg-4 project-coming-soon d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="coming-soon">Coming Soon!</div>
+        </div>
+      </div>
+     <div class="row mt-5">
+        <h4>Repository List :</h4>
+        <div class="row">
+            <ul class="repo-list">
+             {%  for repo in repos %}
+                <li>
+                    <span>
+                        <a href="{{ repo.html_url }}">{{ repo.name }}</a>
+                    </span>
+                </li>
+             {%  endfor %}
+            </ul>
+        </div>
+     </div>
+    </div>
+{%  endblock content %}
