@@ -17,7 +17,8 @@
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/index.css" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'app/css/index.css' %}" />
     <style>
       body {
           font-family: "Poppins", sans-serif;
@@ -111,14 +112,11 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             {% for page in pages %}
-            <a
-              class="nav-item nav-link"
-              href="{{ page['output'].split('/')[1] }}"
-            >
-              {% if page['title'] == title %}
-              <span class="active">{{ page["title"] }}</span>
+            <a class="nav-item nav-link" href="{{ page.url }}">
+              {% if page.title == title %}
+              <span class="active">{{ page.title }}</span>
               {% else %}
-              <span>{{ page["title"] }}</span>
+              <span>{{ page.title }}</span>
               {% endif %}
             </a>
             {% endfor %}
@@ -126,7 +124,7 @@
         </div>
       </div>
     </nav>
-    {{ content|safe }}
+    {{ content | safe }}
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

@@ -1,0 +1,404 @@
+.index-wrapper {
+  background: linear-gradient(
+      180deg,
+      rgba(27, 25, 25, 0.53) 0%,
+      rgba(44, 42, 42, 0.77) 100%
+    ),
+    url("../images/home-office.jpg"), #c4c4c4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+.index-header-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.index-header-wrapper .row {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.index-last-name {
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  color: #f27c4a;
+}
+
+.index-intro {
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  color: #f2f2f2;
+}
+
+.index-sub-intro {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #f2f2f2;
+}
+
+.project-wrapper {
+  margin-top: 10rem;
+}
+
+.project {
+  padding: 0;
+}
+
+.project-coming-soon {
+  border: 1px solid #dee2e6;
+  width: 100%;
+  height: 200px;
+}
+
+.coming-soon {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+}
+
+.project-wrapper .img-thumbnail {
+  min-height: 200px;
+}
+
+.about-main-wrapper {
+  margin-top: 6rem;
+}
+.about-services-wrapper {
+  margin: 1rem;
+}
+
+.about-services {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ef7f18;
+  display: flex;
+  justify-content: center;
+}
+
+.about-sub-head {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 150px;
+}
+
+.about-wrapper {
+  margin-top: 2rem;
+}
+
+.about-profile-wrapper {
+  justify-content: center;
+  align-items: center;
+}
+
+.about-profile-picture {
+  background: url("../images/Ali_Berenjian_2.jpg");
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  background-position-y: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-profile-description {
+  text-align: center;
+}
+
+.about-skill-wrapper {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  min-height: 300px;
+}
+
+.about-p-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-p-wrapper .progress {
+  height: 5px;
+  background: #e5e5e5;
+  position: relative;
+}
+
+.about-intro {
+  justify-content: space-between;
+}
+
+.about-ror {
+  background: #ef7f18;
+  width: 250px;
+}
+
+.about-nodejs {
+  background: #ef7f18;
+  width: 200px;
+}
+
+.about-js {
+  background: #ef7f18;
+  width: 228px;
+}
+
+.about-react {
+  background: #ef7f18;
+  width: 240px;
+}
+
+.about-angular {
+  background: #ef7f18;
+  width: 170px;
+}
+
+.about-html {
+  background: #ef7f18;
+  width: 250px;
+}
+
+.about-css {
+  background: #ef7f18;
+  width: 280px;
+}
+
+@media (min-width: 576px) {
+  .about-ror {
+    background: #ef7f18;
+    width: 550px;
+  }
+
+  .about-nodejs {
+    background: #ef7f18;
+    width: 400px;
+  }
+
+  .about-js {
+    background: #ef7f18;
+    width: 450px;
+  }
+
+  .about-react {
+    background: #ef7f18;
+    width: 520px;
+  }
+
+  .about-angular {
+    background: #ef7f18;
+    width: 350px;
+  }
+
+  .about-html {
+    background: #ef7f18;
+    width: 550px;
+  }
+
+  .about-css {
+    background: #ef7f18;
+    width: 600px;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-main-wrapper {
+    margin-top: 8rem;
+  }
+  .about-services-wrapper {
+    margin: 0;
+  }
+  .about-wrapper {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .about-profile-wrapper {
+    margin-left: 3rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .about-profile-description {
+    text-align: left;
+    width: 350px;
+  }
+  .about-skill-wrapper {
+    margin: 0;
+  }
+
+  .about-ror {
+    background: #ef7f18;
+    width: 350px;
+  }
+
+  .about-nodejs {
+    background: #ef7f18;
+    width: 260px;
+  }
+
+  .about-js {
+    background: #ef7f18;
+    width: 300px;
+  }
+
+  .about-react {
+    background: #ef7f18;
+    width: 340px;
+  }
+
+  .about-angular {
+    background: #ef7f18;
+    width: 250px;
+  }
+
+  .about-html {
+    background: #ef7f18;
+    width: 350px;
+  }
+
+  .about-css {
+    background: #ef7f18;
+    width: 400px;
+  }
+}
+
+.contact-wrapper {
+  margin-top: 10rem;
+}
+
+.contact-header {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.social-icons img {
+  margin-left: 1rem;
+}
+
+.form-container {
+  min-height: 500px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.input-wrapper {
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  width: 80%;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 1; /* Firefox */
+  font-size: 18px;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-size: 18px;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  font-size: 18px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.send-button {
+  width: 200px;
+  height: 55px;
+  background-color: #ef7f18;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    margin-top: 10rem;
+  }
+
+  .contact-header {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  .input-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .social-icons img {
+    margin-left: 1rem;
+  }
+
+  .form-container {
+    min-height: 500px;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .input-wrapper {
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    width: 80%;
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity: 1; /* Firefox */
+    font-size: 18px;
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    font-size: 18px;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    font-size: 18px;
+  }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .send-button {
+    width: 200px;
+    height: 55px;
+    background-color: #ef7f18;
+    color: #fff;
+  }
+}
