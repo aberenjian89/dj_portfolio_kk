@@ -25,7 +25,7 @@ SECRET_KEY = 'o=y=l%4&px(!grv*umkp99p3fjbipm*1j%cmo-dw=em383&jm3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
